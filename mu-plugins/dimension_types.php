@@ -3,37 +3,37 @@
 function dimension_types() {
 
   // Program post type
-  register_post_type('program',array(
-    'show_in_rest' => true,
-    'supports' => array('title','editor'),
-    'rewrite' => array('slug' => 'programs'),
-    'has_archive' => true,   
+  register_post_type('webshop',array(
+  //  'show_in_rest' => true,
+  //  'supports' => array('title','editor'),
+  //  'rewrite' => array('slug' => 'programs'),
+  //  'has_archive' => true,   
     'public' => true,
     'labels' => array(
-      'name' => 'Programs',
-      'add_new_item' => 'Add New Program',
-      'edit_item' => 'Edit Program',
-      'all_items' => 'All Programs',
-      'singular_name' => 'Program'
+      'name' => 'Webshops',
+      'add_new_item' => 'Add New Webshop',
+      'edit_item' => 'Edit Webshop',
+      'all_items' => 'All Webshops',
+      'singular_name' => 'Webshop'
     ),
-    'menu_icon' => 'dashicons-awards'
+    'menu_icon' => 'dashicons-cart'
   ));
 
   // Professor post type
-  register_post_type('professor',array(
+  register_post_type('brand',array(
     'show_in_rest' => true,
     'supports' => array('title','editor','thumbnail'), 
     'public' => true,
     'labels' => array(
-      'name' => 'professors',
-      'add_new_item' => 'Add New professor',
-      'edit_item' => 'Edit Professor',
-      'all_items' => 'All Professors',
-      'singular_name' => 'Professor'
+      'name' => 'Brands',
+      'add_new_item' => 'Add New Brand',
+      'edit_item' => 'Edit Brand',
+      'all_items' => 'All Brands',
+      'singular_name' => 'Brand'
     ),
-    'menu_icon' => 'dashicons-welcome-learn-more'
+    'menu_icon' => 'dashicons-tag'
   ));
-
+/*
     // Note post type
     register_post_type('note',array(
       'capability_type' => 'note',
@@ -66,7 +66,7 @@ function dimension_types() {
           ),
           'menu_icon' => 'dashicons-heart'
         ));
-  
+ */ 
 }
 
 add_action('init', 'dimension_types');
