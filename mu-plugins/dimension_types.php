@@ -69,4 +69,4 @@ function dimension_types() {
   
 }
 
-add_action('init', 'university_post_types');
+add_action('init', 'dimension_types');
