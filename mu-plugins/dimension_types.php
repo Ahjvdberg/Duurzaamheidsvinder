@@ -5,10 +5,13 @@ function dimension_types() {
   // Program post type
   register_post_type('webshop',array(
   //  'show_in_rest' => true,
-  //  'supports' => array('title','editor'),
+    'supports' => array('title','editor', 'thumbnail'),
   //  'rewrite' => array('slug' => 'programs'),
   //  'has_archive' => true,   
     'public' => true,
+    'taxonomies' => array(
+      'category'
+    ),
     'labels' => array(
       'name' => 'Webshops',
       'add_new_item' => 'Add New Webshop',
@@ -24,6 +27,9 @@ function dimension_types() {
     'show_in_rest' => true,
     'supports' => array('title','editor','thumbnail'), 
     'public' => true,
+    'taxonomies' => array(
+      'category'
+    ),
     'labels' => array(
       'name' => 'Brands',
       'add_new_item' => 'Add New Brand',
