@@ -7,7 +7,7 @@ function dimension_types() {
   //  'show_in_rest' => true,
     'supports' => array('title','editor', 'thumbnail'),
   //  'rewrite' => array('slug' => 'programs'),
-  //  'has_archive' => true,   
+    'has_archive' => true,   
     'public' => true,
     'taxonomies' => array(
       'category'
@@ -26,6 +26,7 @@ function dimension_types() {
   register_post_type('brand',array(
     'show_in_rest' => true,
     'supports' => array('title','editor','thumbnail'), 
+    'has_archive' => true,
     'public' => true,
     'taxonomies' => array(
       'category'
