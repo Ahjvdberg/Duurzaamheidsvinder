@@ -2,9 +2,9 @@
 <?php
 function dimension_types() {
 
-  // Program post type
+  // Webshop post type
   register_post_type('webshop',array(
-  //  'show_in_rest' => true,
+    'show_in_rest' => true,   // Use block editor instead of classical editor
     'supports' => array('title','editor', 'thumbnail'),
   //  'rewrite' => array('slug' => 'programs'),
     'has_archive' => true,   
@@ -22,7 +22,7 @@ function dimension_types() {
     'menu_icon' => 'dashicons-cart'
   ));
 
-  // Professor post type
+  // Brand post type
   register_post_type('brand',array(
     'show_in_rest' => true,
     'supports' => array('title','editor','thumbnail'), 
