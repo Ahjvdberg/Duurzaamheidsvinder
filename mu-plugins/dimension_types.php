@@ -5,7 +5,7 @@ function dimension_types() {
   // Webshop post type
   register_post_type('webshop',array(
     'show_in_rest' => true,   // Use block editor instead of classical editor
-    'supports' => array('title','editor', 'thumbnail'),
+    'supports' => array('title','editor', 'thumbnail', 'excerpt'),
   //  'rewrite' => array('slug' => 'programs'),
     'has_archive' => true,   
     'public' => true,
@@ -25,7 +25,8 @@ function dimension_types() {
   // Brand post type
   register_post_type('brand',array(
     'show_in_rest' => true,
-    'supports' => array('title','editor','thumbnail'), 
+    'supports' => array('title','editor','thumbnail', 'excerpt'), 
+    'rewrite' => array('slug' => 'brands'),
     'has_archive' => true,
     'public' => true,
     'taxonomies' => array(
