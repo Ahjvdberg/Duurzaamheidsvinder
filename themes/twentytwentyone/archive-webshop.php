@@ -41,8 +41,19 @@ $description = get_the_archive_description();
 		the_content(
 			twenty_twenty_one_continue_reading_text()
 		);
-//Hier ben ik bezig
-		echo the_field('verzendland'), ', verzendkosten €', the_field('verzendkosten'), ', gratis retour: ', (get_field('retour')? 'ja' : 'nee');
+//Hier heb ik de custom buttons toegevoegd
+		echo the_field('verzendland'), ', verzendkosten €', the_field('verzendkosten'), ', gratis retour: ', (get_field('retour')? 'ja' : 'nee'); ?>
+ 
+		<br>
+		<!-- Hier voeg ik de gerelateerde merken toe aan de webshop archive page -->
+		<?php
+		$relatedBrands = get_field('webshop_merken');
+		
+		foreach($relatedBrands as $brand) { ?>
+			<li><a href="<?php echo get_the_permalink($brand); ?>"><?php echo get_the_title($brand); ?></a></li>
+			
+			<?php
+		}
 
 
 
