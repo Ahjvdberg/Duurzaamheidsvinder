@@ -46,7 +46,7 @@ $description = get_the_archive_description();
  
 		<br>
 		<!-- Hier voeg ik de gerelateerde merken toe aan de webshop archive page -->
-		<?php
+		<?php 
 		$relatedBrands = get_field('webshop_merken');
 		
 		foreach($relatedBrands as $brand) { ?>
