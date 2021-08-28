@@ -6,7 +6,7 @@ function dimension_types() {
   register_post_type('webshop',array(
     'show_in_rest' => true,   // Use block editor instead of classical editor
     'supports' => array('title','editor', 'thumbnail', 'excerpt'),
-  //  'rewrite' => array('slug' => 'programs'),
+    'rewrite' => array('slug' => 'webshops'),
     'has_archive' => true,   
     'public' => true,
     'taxonomies' => array(

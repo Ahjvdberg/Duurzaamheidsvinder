@@ -3,24 +3,25 @@
 //http://duurzaamheidsvinder.local/webshop/
 get_header();
 
-
+/*
 $archiveWebshop = new WP_Query(array(
     'posts_per_page' => 10,
     'post_type' => 'webshop'
 ));
 $description = get_the_archive_description();
+*/
 ?>
 
-<?php if ($archiveWebshop->have_posts() ) : ?>
+<?php if (/*$archiveWebshop->*/have_posts() ) : ?>
 
 	<header class="page-header alignwide">
-		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+		<?php post_type_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 		<?php if ( $description ) : ?>
 			<div class="archive-description"><?php echo wp_kses_post( wpautop( $description ) ); ?></div>
 		<?php endif; ?>
 	</header><!-- .page-header -->
 
-	<?php while ($archiveWebshop->have_posts() ) : ?>
+	<?php while (/*$archiveWebshop->*/have_posts() ) : ?>
 		<?php the_post(); ?>
 <!-- Here I added the template part and changed it -->
 
@@ -74,13 +75,13 @@ $description = get_the_archive_description();
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
 
-	<?php endwhile; ?>
+	<?php endwhile; 
 
-	<?php twenty_twenty_one_the_posts_navigation(); ?>
+		twenty_twenty_one_the_posts_navigation(); 
 
-<?php else : ?>
-	<?php get_template_part( 'template-parts/content/content-none' ); ?>
-<?php endif; 
+	else : 
+		get_template_part( 'template-parts/content/content-none' ); 
+ 	endif; 
 
 get_footer();
 ?>
