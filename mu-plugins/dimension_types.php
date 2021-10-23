@@ -17,7 +17,9 @@ function dimension_types() {
       'add_new_item' => 'Add New Webshop',
       'edit_item' => 'Edit Webshop',
       'all_items' => 'All Webshops',
-      'singular_name' => 'Webshop'
+      'singular_name' => 'Webshop',
+      'search_items' => 'Search Webshops',
+      'not_found' => 'No Websites Found'
     ),
     'menu_icon' => 'dashicons-cart'
   ));

@@ -12,7 +12,7 @@ $description = get_the_archive_description();
 */
 ?>
 
-<?php if (/*$archiveWebshop->*/have_posts() ) : ?>
+<?php if (have_posts() ) : ?>
 
 	<header class="page-header alignwide">
 		<?php post_type_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
@@ -21,7 +21,7 @@ $description = get_the_archive_description();
 		<?php endif; ?>
 	</header><!-- .page-header -->
 
-	<?php while (/*$archiveWebshop->*/have_posts() ) : ?>
+	<?php while (have_posts() ) : ?>
 		<?php the_post(); ?>
 <!-- Here I added the template part and changed it -->
 
