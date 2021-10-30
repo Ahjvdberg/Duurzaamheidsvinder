@@ -629,3 +629,17 @@ function twentytwentyone_add_ie_class() {
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 
 add_action('init', 'dimension_types');
+
+// To add the custom page categories to the Category overviews
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'webshop'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
+}
