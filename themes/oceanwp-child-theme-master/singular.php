@@ -47,25 +47,17 @@ get_header(); ?>
 							// Library post types.
 							get_template_part( 'partials/library/layout' );
 
+						} elseif ( is_singular( 'webshop' ) ) {
+
+							// Webshop post types.
+							get_template_part( 'partials/webshop/layout' );
+
 						} else {
 
 							// All other post types.
 							get_template_part( 'partials/single/layout', get_post_type() );
 
 						}
-	//Hier heb ik de custom buttons toegevoegd
-	echo the_field('verzendland'), ', verzendkosten €', the_field('verzendkosten'), ', gratis retour: ', (get_field('retour')? 'ja' : 'nee'); ?>
- 
-	<br>
-	<!-- Hier voeg ik de gerelateerde merken toe aan de webshop archive page -->
-	<?php 
-	$relatedBrands = get_field('webshop_merken');
-	
-	foreach($relatedBrands as $brand) { ?>
-		<li><a href="<?php echo get_the_permalink($brand); ?>"><?php echo get_the_title($brand); ?></a></li>
-		
-		<?php
-	}
 
 					endwhile;
 
