@@ -57,7 +57,7 @@ get_header(); ?>
 	echo the_field('verzendland'), ', verzendkosten €', the_field('verzendkosten'), ', gratis retour: ', (get_field('retour')? 'ja' : 'nee'); ?>
  
 	<br>
-	<!-- Hier voeg ik de gerelateerde merken toe aan de webshop archive page -->
+	<!-- Hier voeg ik de gerelateerde merken toe aan de webshop archive page   -->
 	<?php 
 	$relatedBrands = get_field('webshop_merken');
 	
