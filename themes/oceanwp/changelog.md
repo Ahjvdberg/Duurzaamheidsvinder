@@ -1,5 +1,47 @@
 # OceanWP Changelog
 
+### _2022.03.31._ - 3.2.1
+- **Improved**: Accessibility: Mobile icon.
+- **Updated**: Templates: partials/mobile/mobile icon.
+- **Fixed**: Blog: Single Post: Post Title Cover Style: Featured image not displayed on boxed website layout.
+- **Fixed**: Blog: Single Post: New Post Title Styles: Author avatar image not displayed.
+- **Added**: Blog: Single Post: Post Title Cover Style: color overlay settings.
+
+### _2022.03.30._ - 3.2.0
+
+- **New**: Blog: Single Post: Page Title Styles: Intro, Cover, Card, Card Invert, Screen and Screen Invert.
+- **New**: Blog: Single Post: Comments: Delete comment option. Available on frontend and visible to admins only.
+- **New**: Blog: Blog Entries: Edit post button. Visible to admins only.
+- **New**: Template: partials/single/headers/header-2
+- **New**: Template: partials/single/headers/header-3
+- **New**: Template: partials/single/headers/header-4
+- **New**: Template: partials/single/headers/header-5
+- **New**: Template: partials/single/headers/header-6
+- **New**: Template: partials/single/headers/header-7
+- **New**: Template: partials/single/metas/meta-2
+- **New**: Template: partials/single/metas/meta-3
+- **New**: Template: partials/single/metas/meta-4
+- **New**: Typography: Host Google fonts locally via Customize > Typography > General. No font upload required.
+- **Fixed**: Header: Vertical Style: Dropdown options not displayed.
+
+### _2022.03.07._ - 3.1.4
+
+-   **Fixed** Logo: Retinal Logo: display issue.
+-   **Fixed** WooCommerce: Checkout: Multi-Step Checkout: guest checkout issue.
+-   **Fixed** Customizer: Color settings missing localize script.
+-   **Improved** Script performance
+
+### _2022.02.02._ - 3.1.3
+
+-   **Fixed** Customizer: Missing Typography Class.
+-   **Fixed** Customizer: Font assets loading on front end.
+-   **Fixed** Customizer: Color settings missing localize script.
+-   **Fixed** Header: Mobile Menu link not crawlable.
+-   **Fixed** Blog: Meta: Reading time displaying 1min for languages using non-alphabetic characters.
+-   **Fixed** WooCommerce: Checkout: Header disabled in full on distraction-free mode.
+-   **Fixed** WooCommerce: Checkout: Mandatory fields skipped.
+-   **Fixed** Gutenberg: Layout: Full Width Style issue.
+
 ### _2021.11.30._ - 3.1.2
 
 -   **Fixed** Some minor issues.

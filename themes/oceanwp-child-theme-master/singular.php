@@ -52,6 +52,11 @@ get_header(); ?>
 							// Webshop post types.
 							get_template_part( 'partials/webshop/layout' );
 
+						} elseif ( is_singular( 'brand' ) ) {
+
+							// Webshop post types.
+							get_template_part( 'partials/brand/layout' );
+
 						} else {
 
 							// All other post types.
