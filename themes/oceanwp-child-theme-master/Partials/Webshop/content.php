@@ -19,7 +19,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	the_content();
 
 		//Hier heb ik de custom buttons toegevoegd
-		echo the_field('verzendland'), ', verzendkosten €', the_field('verzendkosten'), ', gratis retour: ', (get_field('retour')? 'ja' : 'nee'); ?>
+		echo 'Verzend vanuit: ', the_field('verzendland'); 
+		echo '<br>';
+		echo 'Verzendkosten: €', the_field('verzendkosten');
+		echo '<br>';
+		echo 'Gratis retour: ', (get_field('retour')? 'ja' : 'nee'); 
+		echo '<br>';
+		echo '<br>';
+		echo 'Webshop verkoopt de volgende duurzame merken: '; ?>
  
 		<br>
 		<!-- Hier voeg ik de gerelateerde merken toe aan de webshop archive page -->
